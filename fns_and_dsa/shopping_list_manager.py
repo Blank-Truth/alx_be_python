@@ -10,7 +10,7 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice(i.e 1-4): ").strip())
+        choice = map(int, input("Enter your choice(i.e 1-4): ").strip())
         if choice == 1:
             item = input("Enter item you want to add").strip()
             shopping_list.append(item)
